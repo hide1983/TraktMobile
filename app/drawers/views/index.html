@@ -1,0 +1,115 @@
+<div ng-controller="LeftController">
+
+    <script>
+        document.addEventListener("touchmove", function(e){
+            e.preventDefault();
+        });
+    </script>
+
+
+
+    <div class="sidebar-controls">
+        <a href="#" class="sidebar-call"></a>
+        <a href="#" class="sidebar-text"></a>
+        <a href="#" class="sidebar-face"></a>
+        <a href="#" class="sidebar-twit"></a>
+        <a href="#" class="sidebar-close"></a>
+    </div>
+
+    <div class="sidebar-header">
+
+        <img class="sidebar-logo round-decoration" src="{{ profile.avatar }}" alt="img">
+        <h4 class="center-text">{{ profile.username }}  </h4>
+        <em class="center-text"> {{ profile.gender }}  </em>
+    </div>
+
+    <div class="sidebar-breadcrumb">
+        <div class="sidebar-decoration"></div>
+        <p>Navigation</p>
+        <div class="sidebar-decoration"></div>
+    </div>
+
+    <div class="navigation-items">
+        <div class="nav-item">
+            <a href="index.html" class="home-nav">Home<em class="selected-nav"></em></a>
+        </div>
+        <div class="sidebar-decoration"></div>
+        <div class="nav-item">
+            <a href="#" class="features-nav submenu-deploy">Features<em class="dropdown-nav"></em></a>
+            <div class="nav-item-submenu">
+                <div class="sidebar-decoration"></div>
+                <a href="#/shows" onclick="alert('test');return false;">Your shows	<em class="unselected-sub-nav"></em></a>
+                <a href="type.html">Typography		<em class="unselected-sub-nav"></em></a>
+                <a href="jquery.html">jQuery			<em class="unselected-sub-nav"></em></a>
+            </div>
+        </div>
+        <div class="sidebar-decoration"></div>
+        <div class="nav-item">
+            <a href="#" class="gallery-nav submenu-deploy">Gallery<em class="dropdown-nav"></em></a>
+            <div class="nav-item-submenu">
+                <div class="sidebar-decoration"></div>
+                <a href="widefolio.html">Wide item Portfolio		<em class="selected-sub-nav"></em></a>
+                <a href="onefolio.html">One Column Portfolio	 <em class="unselected-sub-nav"></em></a>
+                <a href="twofolio.html">Two Column Portfolio	 <em class="unselected-sub-nav"></em></a>
+                <a href="gallery.html">Touch Thumb Gallery		  <em class="unselected-sub-nav"></em></a>
+                <a href="video.html">Responsive Videos			<em class="unselected-sub-nav"></em></a>
+            </div>
+        </div>
+        <div class="sidebar-decoration"></div>
+        <div class="nav-item">
+            <a href="contact.html" class="contact-nav">Contact<em class="unselected-nav"></em></a>
+        </div>
+        <div class="sidebar-decoration"></div>
+        <div class="nav-item">
+            <a href="#"  onclick="supersonic.ui.drawers.close()" class="close-nav">Close<em class="unselected-nav"></em></a>
+        </div>
+    </div>
+
+    <div class="sidebar-breadcrumb">
+        <div class="sidebar-decoration"></div>
+        <p>Page Updates</p>
+        <div class="sidebar-decoration"></div>
+    </div>
+
+    <div class="sidebar-updates">
+        <div class="sidebar-update red-update">
+            <strong>Warning</strong>
+            <em>Warning, something red here!</em>
+        </div>
+        <div class="sidebar-update blue-update">
+            <strong>Notification</strong>
+            <em>Check it out! A blue notification!</em>
+        </div>
+
+        <div class="sidebar-update green-update">
+            <strong>Information</strong>
+            <em>Did you know? An information!</em>
+        </div>
+
+        <div class="sidebar-update yellow-update no-bottom">
+            <strong>Attention</strong>
+            <em>Pay attention, check this stuff!</em>
+        </div>
+    </div>
+
+    <div class="sidebar-breadcrumb">
+        <div class="sidebar-decoration"></div>
+        <p>Let's get social!</p>
+        <div class="sidebar-decoration"></div>
+    </div>
+
+    <div class="navigation-items">
+        <div class="nav-item">
+            <a href="#" class="facebook-nav">Facebook<em class="link-nav"></em></a>
+        </div>
+        <div class="sidebar-decoration"></div>
+        <div class="nav-item">
+            <a href="#" class="twitter-nav">Twitter<em class="link-nav"></em></a>
+        </div>
+    </div>
+
+    <div class="sidebar-decoration"></div>
+
+    <p class="sidebar-copyright center-text">Copyright 2013.<br>All rights reserved.</p>
+
+</div>
